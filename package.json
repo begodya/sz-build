@@ -1,6 +1,6 @@
 {
   "name": "sz-build",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自建脚手架",
   "main": "index.js",
   "scripts": {
