@@ -16,6 +16,9 @@
   "keywords": [
     "sz-build"
   ],
+  "engines": {
+    "node": ">=8.9"
+  },
   "author": "begodya",
   "license": "MIT",
   "bugs": {
