@@ -7,12 +7,12 @@ const ora = require('ora'); // 小图标
 
 program
   .version('0.1.0')
-  .option('-i, init [name]', '初始化 sz-cli 项目')
+  .option('-i, init [name]', '初始化 sz-build 项目')
   .parse(process.argv);
 
 if (program.init) {
-  const spinner = ora('正在从 github 下载 sz-cli').start();
-  download('begodya/sz-cli', program.init, function (err) {
+  const spinner = ora('正在从 github 下载 sz-build').start();
+  download('begodya/sz-build', program.init, function (err) {
     if (!err) {
       // 可以输出一些项目成功的信息
       console.info(chalk.blueBright('下载成功'));
