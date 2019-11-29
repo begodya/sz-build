@@ -26,11 +26,13 @@
   },
   "homepage": "https://github.com/begodya/sz-build#readme",
   "dependencies": {
-    "chalk": "^3.0.0",
-    "commander": "^4.0.1",
-    "download-git-repo": "^3.0.2",
-    "ora": "^4.0.3",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "fs-extra": "^8.0.1",
+    "inquirer": "^6.3.1",
+    "node-cmd": "^3.0.0",
+    "ora": "^3.4.0",
     "request": "^2.88.0",
-    "semver": "^6.3.0"
+    "semver": "^6.1.1"
   }
 }
