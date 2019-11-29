@@ -23,13 +23,13 @@ module.exports = merge(common, {
       warnings: true,
       errors: true
     },
-    stats:'minimal'
+    stats: 'minimal'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.ProgressPlugin(function(percentage) {
+    new webpack.ProgressPlugin(function (percentage) {
       if (percentage === 1) {
-        clearConsole('cyan', `X-BUILD v${require('../../package.json').version}`);
+        clearConsole('cyan', `SZ-BUILD v${require('../../package.json').version}`);
         console.log(chalk.cyan(`- Local: http://localhost:${port}/`));
         console.log(chalk.cyan(`- Network: http://${getIPAdress()}:${port}/`));
         console.log(chalk.cyan(`- Documentation: https://codexu.github.io/`));
