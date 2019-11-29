@@ -1,4 +1,4 @@
-# X-BUILD
+# SZ-BUILD
 
 ## Project setup
 
