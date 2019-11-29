@@ -1,6 +1,6 @@
 const path = require('path');
 const chalk = require('chalk');
-const config = require(path.resolve(`${process.cwd()}/xbuild.config.js`));
+const config = require(path.resolve(`${process.cwd()}/szbuild.config.js`));
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const webpack = require('webpack');

@@ -1,6 +1,8 @@
 const path = require('path');
-const config = require(path.resolve(`${process.cwd()}/xbuild.config.js`));
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const config = require(path.resolve(`${process.cwd()}/szbuild.config.js`));
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -18,7 +20,7 @@ module.exports = {
     filename: 'bundle.[hash:8].js',
     path: path.resolve('./dist')
   },
-  stats:{
+  stats: {
     modules: false,
     cachedAssets: false,
     children: false,
@@ -27,11 +29,10 @@ module.exports = {
     chunkModules: false
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ]
+    extensions: ['.tsx', '.ts', '.js']
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.styl$/,
         exclude: /node_modules/,
         use: [
@@ -52,7 +53,7 @@ module.exports = {
           'postcss-loader',
           'less-loader',
         ]
-      },{
+      }, {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
