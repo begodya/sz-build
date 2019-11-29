@@ -1,5 +1,5 @@
 {
-  "name": "sz-cli",
+  "name": "sz-build",
   "version": "1.0.0",
   "description": "自建脚手架",
   "main": "index.js",
@@ -7,21 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "sz-cli": "./bin/sz-cli.js"
+    "sz-build": "./bin/sz-build.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/begodya/sz-cli.git"
+    "url": "git+https://github.com/begodya/sz-build.git"
   },
   "keywords": [
-    "sz-cli"
+    "sz-build"
   ],
   "author": "begodya",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/begodya/sz-cli/issues"
+    "url": "https://github.com/begodya/sz-build/issues"
   },
-  "homepage": "https://github.com/begodya/sz-cli#readme",
+  "homepage": "https://github.com/begodya/sz-build#readme",
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
