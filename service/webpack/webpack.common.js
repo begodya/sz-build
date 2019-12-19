@@ -5,7 +5,6 @@ const {
 } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // https://github.com/jantimon/html-webpack-plugin
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // https://github.com/webpack-contrib/mini-css-extract-plugin
-
 const basePath = path.resolve(process.cwd());
 
 module.exports = {
@@ -134,7 +133,6 @@ module.exports = {
     ]
   }
 };
-
 
 function jsLoader() {
   const arr = [];

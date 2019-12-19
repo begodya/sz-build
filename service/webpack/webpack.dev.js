@@ -32,7 +32,7 @@ module.exports = merge(common, {
         clearConsole('cyan', `SZ-BUILD v${require('../../package.json').version}`);
         console.log(chalk.cyan(`- Local: http://localhost:${port}/`));
         console.log(chalk.cyan(`- Network: http://${getIPAdress()}:${port}/`));
-        console.log(chalk.cyan(`- Documentation: https://codexu.github.io/`));
+        console.log(chalk.cyan(`- Documentation: https://github.com/begodya/sz-build`));
         console.log('');
       }
     })

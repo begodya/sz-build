@@ -20,4 +20,4 @@ npm run build
 
 ### Documents
 
-See [Documents](https://codexu.github.io/).
+See [Documents](https://github.com/begodya/sz-build).
