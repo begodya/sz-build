@@ -3,9 +3,8 @@ const config = require(path.resolve(`${process.cwd()}/szbuild.config.js`));
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // https://github.com/jantimon/html-webpack-plugin
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // https://github.com/webpack-contrib/mini-css-extract-plugin
 const basePath = path.resolve(process.cwd());
 
 module.exports = {
@@ -20,7 +19,7 @@ module.exports = {
     filename: 'bundle.[hash:8].js',
     path: path.resolve('./dist')
   },
-  stats: {
+  stats: { // http://webpack.github.io/analyse/
     modules: false,
     cachedAssets: false,
     children: false,
@@ -53,7 +52,8 @@ module.exports = {
           'postcss-loader',
           'less-loader',
         ]
-      }, {
+      },
+      {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
@@ -133,7 +133,6 @@ module.exports = {
     ]
   }
 };
-
 
 function jsLoader() {
   const arr = [];
